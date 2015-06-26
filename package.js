@@ -15,7 +15,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.use(['ddp', 'grigio:babel']);
+  api.use(['ddp', 'grigio:babel@0.1.4']);
   api.addFiles('simple-test.es6.js');
   api.export(['tests', 'SimpleTest']);
 });
