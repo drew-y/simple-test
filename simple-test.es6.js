@@ -5,7 +5,7 @@ class SimpleTest {
     this.total = 0;
   }
 
-  assert(condition, label = 'Unknown') {
+  addAssert(condition, label = 'Unknown') {
     this.total++;
     if (!condition) {
       this.failed++;
@@ -17,7 +17,7 @@ class SimpleTest {
     return this;
   }
 
-  showResults() {
+  results() {
     if (this.passed === this.total) {
       console.log('All tests passed. (' + this.total + ')');
     } else {
